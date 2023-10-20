@@ -1,0 +1,156 @@
+/* Start Global Rulse */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) { 
+    .container{
+        width: 970px;
+    }
+}
+/* large */
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/* End Global Rulse */
+html {
+    height: 100%;
+    background-image: linear-gradient(to bottom right,#F2C2C5 5%, #AE80C7 );
+    font-family: 'Titillium Web';
+}
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+/* Start List */
+.list {
+    min-width: 300px;
+    height: 80%;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    position: relative;
+    font-weight: 600;
+    color: #707070;
+}
+.list>i {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #AE80C7;
+}
+.list .tasks {
+    height: 400px;
+    overflow-y: scroll;
+}
+.list .tasks::-webkit-scrollbar {
+    width: 0;
+}
+.list .tasks::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+.list .tasks .task {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.list .tasks .task .check {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E9E9E9;
+    border-radius: 7px;
+    text-align: center;
+}
+.list .tasks .task .check i {
+    color: #AE80C7;
+    display: none;
+}
+.list .tasks .task p {
+    margin-left: -70px;
+}
+.list .tasks .task i {
+    color: #f13333b1;
+}
+.list button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFBA74;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+}
+/* End List */
+/* Start opst */
+.opst {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 30%);
+}
+/* End opst */
+/* Start add */
+.add {
+    position: absolute;
+    height: 150px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.add input {
+    background-color: #E9E9E9;
+    border: none;
+    outline: none;
+    height: 30px;
+    border-radius: 8px;
+    padding: 10px;
+}
+.add .butbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+.add .butbar button {
+    width: 60px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+}
+.add .butbar button:first-of-type {
+    background-color: #AE80C7;
+    color: #FFFFFF;
+}
+.add .butbar button:last-of-type {
+    color: #f13333b1;
+    border: 2px solid #f13333b1;
+}
+/* End add */
