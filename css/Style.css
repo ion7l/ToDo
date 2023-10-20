@@ -59,12 +59,12 @@ body {
     height: 400px;
     overflow-y: scroll;
 }
-/* .list .tasks::-webkit-scrollbar {
+.list .tasks::-webkit-scrollbar {
     width: 0;
 }
 .list .tasks::-webkit-scrollbar-thumb {
     background-color: transparent;
-} */
+}
 .list .tasks .task {
     height: 50px;
     display: flex;
