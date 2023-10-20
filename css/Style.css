@@ -56,7 +56,7 @@ body {
     color: #AE80C7;
 }
 .list .tasks {
-    height: 400px;
+    max-height: 400px;
     overflow-y: scroll;
 }
 .list .tasks::-webkit-scrollbar {
